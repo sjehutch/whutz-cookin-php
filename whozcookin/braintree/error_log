@@ -1,0 +1,30 @@
+[19-Nov-2015 07:28:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'whozcookin_user'@'localhost' to database 'braintree'' in /home/whutzcookin2015/public_html/braintree/db.php:7
+Stack trace:
+#0 /home/whutzcookin2015/public_html/braintree/db.php(7): PDO->__construct('mysql:host=Loca...', 'whozcookin_user', 'qwerty@33')
+#1 /home/whutzcookin2015/public_html/braintree/functions.php(4): getDB()
+#2 /home/whutzcookin2015/public_html/braintree/index.php(26): getUserCartDetails('1')
+#3 {main}
+  thrown in /home/whutzcookin2015/public_html/braintree/db.php on line 7
+[19-Nov-2015 07:31:23 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/whutzcookin2015/public_html/braintree/functions.php on line 6
+[19-Nov-2015 07:31:56 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/whutzcookin2015/public_html/braintree/functions.php on line 6
+[19-Nov-2015 07:31:58 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/whutzcookin2015/public_html/braintree/functions.php on line 6
+[19-Nov-2015 07:32:24 UTC] PHP Fatal error:  Call to undefined function getdb() in /home/whutzcookin2015/public_html/braintree/functions.php on line 4
+[19-Nov-2015 07:34:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/whutzcookin2015/public_html/braintree/functions.php on line 7
+[19-Nov-2015 07:35:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'whozcookin.Cart' doesn't exist' in /home/whutzcookin2015/public_html/braintree/functions.php:8
+Stack trace:
+#0 /home/whutzcookin2015/public_html/braintree/functions.php(8): PDOStatement->execute()
+#1 /home/whutzcookin2015/public_html/braintree/index.php(26): getUserCartDetails('1')
+#2 {main}
+  thrown in /home/whutzcookin2015/public_html/braintree/functions.php on line 8
+[19-Nov-2015 09:50:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/whutzcookin2015/public_html/braintree/functions.php:24
+Stack trace:
+#0 /home/whutzcookin2015/public_html/braintree/functions.php(24): PDOStatement->execute()
+#1 /home/whutzcookin2015/public_html/braintree/cardProcess.php(37): updateUserOrder('4vfkx4', '1')
+#2 {main}
+  thrown in /home/whutzcookin2015/public_html/braintree/functions.php on line 24
+[19-Nov-2015 09:50:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/whutzcookin2015/public_html/braintree/functions.php:24
+Stack trace:
+#0 /home/whutzcookin2015/public_html/braintree/functions.php(24): PDOStatement->execute()
+#1 /home/whutzcookin2015/public_html/braintree/cardProcess.php(37): updateUserOrder('7zqhy8', '1')
+#2 {main}
+  thrown in /home/whutzcookin2015/public_html/braintree/functions.php on line 24
